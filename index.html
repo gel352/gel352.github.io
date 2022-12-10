@@ -5,8 +5,15 @@
 	<title>W</title>
   <link rel="stylesheet" type="text/css" href="out.css">
   </head>
-  <body>	
-	<h1>Hello world</h1>
-	<p>工程创建成功！</p>  
-  </body>
+    <body>     
+<input type="button" id="b" value="确定"/>
+ </body>
+ <script>
+  var b=document.getElementById("b");
+  b.onclick=function (){
+    setTimeout(function (){
+     alert("你好");
+    },500);
+  }
+ </script>
 </html>
