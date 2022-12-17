@@ -25,3 +25,26 @@ body{
   inset 50px 0 200px #0ff;
     }
   }
+a{
+  display:block;
+  width:200px;
+  height:60px;
+  background-color:#339900;
+  text-align:center;
+  font-size:28px;
+  color:#fff;
+  text-decoration:none;
+  border-radius:12px;
+  font-family:myFisrtFont;
+  position:relative;
+  top:85px;
+  left:35px;
+  }
+a:active{
+  background-color:#66ff00;
+  color:#669966;
+  }
+p{
+  position:relative;
+  top:10px;
+  }
