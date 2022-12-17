@@ -37,8 +37,8 @@ a{
   border-radius:12px;
   font-family:myFisrtFont;
   position:relative;
-  top:85px;
-  left:35px;
+  top:90px;
+  left:70px;
   }
 a:active{
   background-color:#66ff00;
@@ -46,5 +46,5 @@ a:active{
   }
 p{
   position:relative;
-  top:10px;
+  top:15px;
   }
