@@ -56,13 +56,12 @@ p{
         position: relative;
         top: 12px;
         color: rgba(0,0,0,0.8);
-        border-bottom: 1px solid rgba(0,0,0,0.3);
 }
 .na{
         font-size: 36px;
         color: #999;
         position: relative;
-        top: 90px;
+        top: 40px;
         left: 255px;
 }
 #cyd{
