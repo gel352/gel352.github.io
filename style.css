@@ -25,26 +25,63 @@ body{
   inset 50px 0 200px #0ff;
     }
   }
-a{
-  display:block;
-  width:200px;
-  height:60px;
-  background-color:#339900;
-  text-align:center;
-  font-size:28px;
-  color:#fff;
-  text-decoration:none;
-  border-radius:12px;
-  font-family:myFisrtFont;
-  position:relative;
-  top:90px;
-  left:70px;
-  }
-a:active{
-  background-color:#66ff00;
-  color:#669966;
+#talk{
+        display: block;
+        position: relative;
+        left: 0;
+        top: 260px;
+        margin: 0 auto;
+        width: 600px;
+        height: 450px;
+        background-color: white;
+        border-radius: 15px;
+        border-right: 2px solid #000000;
+}
+#full{
+        display:none;
+        position:fixed;
+        z-index:10;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        overflow:auto;
+        background-color:rgba(0,0,0,0.4);
   }
 p{
-  position:relative;
-  top:13px;
-  }
+        width: 100%;
+        height: 90px;
+        font-size: 46px;
+        text-align: center;
+        position: relative;
+        top: 12px;
+        color: rgba(0,0,0,0.8);
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.na{
+        font-size: 36px;
+        color: #999;
+        position: relative;
+        top: 90px;
+        left: 255px;
+}
+#cyd{
+        border-bottom-right-radius:15px;
+        border-bottom-left-radius:15px;
+        border-top: 1px solid rgba(0,0,0,0.3);
+        width: 100%;
+        height: 110px;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+}
+#cyd:active{
+        background: #eee;
+}
+.cyd1{
+        font-size: 50px;
+        position: relative;
+        top: 15px;
+        color: #3399ff;
+}
+
