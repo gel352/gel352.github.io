@@ -29,13 +29,13 @@ body{
         display: block;
         position: relative;
         left: 0;
-        top: 260px;
+        top: 60px;
         margin: 0 auto;
-        width: 600px;
-        height: 450px;
+        width: 200px;
+        height: 150px;
         background-color: white;
-        border-radius: 15px;
-        border-right: 2px solid #000000;
+        border-radius: 5px;
+        border-right: 1px solid #000000;
 }
 #full{
         display:none;
@@ -50,26 +50,27 @@ body{
   }
 p{
         width: 100%;
-        height: 90px;
-        font-size: 46px;
+        height: 50px;
+        font-size: 20px;
         text-align: center;
         position: relative;
-        top: 12px;
+        left: 0;
+        top: 8px;
         color: rgba(0,0,0,0.8);
 }
 .na{
-        font-size: 36px;
+        font-size: 16px;
         color: #999;
         position: relative;
-        top: 40px;
-        left: 255px;
+        top: -2px;
+        left: 80px;
 }
 #cyd{
         border-bottom-right-radius:15px;
         border-bottom-left-radius:15px;
         border-top: 1px solid rgba(0,0,0,0.3);
         width: 100%;
-        height: 110px;
+        height: 30px;
         position: absolute;
         bottom: 0;
         text-align: center;
@@ -78,9 +79,8 @@ p{
         background: #eee;
 }
 .cyd1{
-        font-size: 50px;
+        font-size: 20px;
         position: relative;
-        top: 15px;
+        top: 1px;
         color: #3399ff;
 }
-
