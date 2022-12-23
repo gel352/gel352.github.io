@@ -34,8 +34,7 @@ body{
         width: 200px;
         height: 150px;
         background-color: white;
-        border-radius: 5px;
-        border-right: 1px solid #000000;
+        border-radius: 2px;
 }
 #full{
         display:none;
@@ -62,7 +61,7 @@ p{
         font-size: 16px;
         color: #999;
         position: relative;
-        top: -2px;
+        top: -25px;
         left: 80px;
 }
 #cyd{
