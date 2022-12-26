@@ -63,7 +63,7 @@ p{
         font-size: 16px;
         color: gray;
         position: relative;
-        top: 12px;
+        top: 5px;
         left: 116px;
 }
 #cyd{
@@ -71,7 +71,7 @@ p{
         border-bottom-left-radius:15px;
         border-top: 0.5px solid rgba(0,0,0,0.3);
         width: 100%;
-        height: 48px;
+        height: 45px;
         position: absolute;
         bottom: 0;
         text-align: center;
@@ -82,6 +82,6 @@ p{
 .cyd1{
         font-size: 18px;
         position: relative;
-        top: 12px;
+        top: 10px;
         color: #3399ff;
 }
