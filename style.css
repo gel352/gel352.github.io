@@ -33,8 +33,8 @@ body{
         left: 0;
         top: 60px;
         margin: 0 auto;
-        width: 200px;
-        height: 150px;
+        width: 270px;
+        height: 185px;
         background-color: white;
         border-radius: 2px;
 }
@@ -52,26 +52,26 @@ body{
 p{
         width: 100%;
         height: 50px;
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
         position: relative;
         left: 0;
-        top: 8px;
+        top: 23px;
         color: rgba(0,0,0,0.8);
 }
 .na{
         font-size: 16px;
-        color: #999;
+        color: gray;
         position: relative;
-        top: -25px;
-        left: 80px;
+        top: 20px;
+        left: 116px;
 }
 #cyd{
         border-bottom-right-radius:15px;
         border-bottom-left-radius:15px;
-        border-top: 1px solid rgba(0,0,0,0.3);
+        border-top: 0.5px solid rgba(0,0,0,0.3);
         width: 100%;
-        height: 30px;
+        height: 48px;
         position: absolute;
         bottom: 0;
         text-align: center;
@@ -80,8 +80,8 @@ p{
         background: #eee;
 }
 .cyd1{
-        font-size: 20px;
+        font-size: 18px;
         position: relative;
-        top: 1px;
+        top: 10px;
         color: #3399ff;
 }
