@@ -3,11 +3,11 @@ e.onclick = function() {
         let full = document.querySelector('#full');
       setTimeout(function(){
         full.style.display = 'block';
-        },1000)
+        },700)
 }
 let cy = document.querySelector('#cyd');
 cy.onclick = function(){
   setTimeout(function(){
         full.style.display = 'none';
-        },2000)
+        },700)
 }
