@@ -1,13 +1,6 @@
-let e = document.querySelector('#v1');
-e.onclick = function() {
-        let full = document.querySelector('#full');
-      setTimeout(function(){
-        full.style.display = 'block';
-        },300)
-}
-let cy = document.querySelector('#cyd');
-cy.onclick = function(){
+let d = document.getElementById('dx');
+d.onclick = function () {
   setTimeout(function(){
-        full.style.display = 'none';
-        },450)
+    window.location.href = 'apk/Google Earth-v9.175.0.1.apk'
+    },200)
 }
