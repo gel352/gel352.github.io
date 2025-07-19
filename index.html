@@ -1,15 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Google Earth安卓下载</title  >
-  <link rel="shortcut icon" href="https://gel352.github.io/qwa/img/1.png">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html lang="zh-CN">
 
-  <script src="mai.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>Mapbox 地球模式</title>
+    <link rel="shortcut icon" href="image/assets/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mapbox-gl/dist/mapbox-gl.css" />
+    <script type="text/javascript" src="mapbox-gl/dist/mapbox-gl.js"></script>
+    <script type="text/javascript" src="jQuery/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #map {
+            width: 100%;
+            height: 100vh;
+        }
+        
+        div{
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="peg">
+        <div class="pegt">
+            <img src="image/assets/pegman.svg" id="pegimg">
+        </div>
+    </div>
+    <!-- 经纬度显示 -->
+    <div class="latlng">
+        <span id="latng"></span>
+    </div>
+    <div id="map"></div>
+    <!-- 自定义弹窗 -->
+    <div id="popup">
+        <div class="popupbox">
+            <h5 class="posapn">此功能暂时无法使用</h5>
+            <button id="close">确定</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
