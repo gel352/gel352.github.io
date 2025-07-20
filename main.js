@@ -43,9 +43,9 @@ map.on('load', () => {
     // 添加自定义影像瓦片
     map.addSource('custom-tiles', {
         type: 'raster',
-        tiles: ['https://maps-for-free.com/layer/relief/z{z}/row{y}/{z}_{x}-{y}.jpg'],
-        tileSize: 256,
-        maxzoom: 18
+        tiles: ['https://gg.zhiyue-info.com/maps/vt?lyrs=s%40781&hl=zh-CN&x={x}&y={y}&z={z}&scale=2'],
+        tileSize: 512,
+        maxzoom: 22
     });
 
     map.addLayer({
