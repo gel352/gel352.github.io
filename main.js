@@ -112,3 +112,69 @@ map.on('move', () => {
     }
 
 });
+
+const lonInput = document.getElementById('lonInput');
+const latInput = document.getElementById('latInput');
+const searchBtn = document.getElementById('searchBtn');
+searchBtn.addEventListener('click', function() {
+    // 获取输入的经纬度并转换为数字
+    const lon = parseFloat(lonInput.value);
+    const lat = parseFloat(latInput.value);
+
+    // 验证输入有效性
+    if (isNaN(lon) || isNaN(lat) || lon < -180 || lon > 180 || lat < -90 || lat > 90) {
+        alert('请输入有效的经纬度（经度-180~180，纬度-90~90）');
+        return;
+    }
+
+    // 清除之前的标记
+    map.getSource('target-point')?.setData({
+        type: 'FeatureCollection',
+        features: []
+    });
+
+    // 添加标记点
+    if (!map.getSource('target-point')) {
+        // 首次添加数据源和图层
+        map.addSource('target-point', {
+            type: 'geojson',
+            data: {
+                type: 'FeatureCollection',
+                features: []
+            }
+        });
+        
+        map.addLayer({
+            id: 'target-marker',
+            type: 'circle',
+            source: 'target-point',
+            paint: {
+                'circle-color': 'red',
+                'circle-radius': 8,
+                'circle-stroke-color': 'white',
+                'circle-stroke-width': 2.5
+            }
+        });
+    }
+
+    // 设置标记点数据
+    map.getSource('target-point').setData({
+        type: 'FeatureCollection',
+        features: [{
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [lon, lat]
+            }
+        }]
+    });
+
+    // 飞行到目标点（旋转+放大效果）
+    map.flyTo({
+        center: [lon, lat], // 目标经纬度
+        zoom: 15, // 最终缩放级别（替代距离控制）
+        bearing: 30, // 偏航角（旋转角度，单位度）
+        pitch: 60, // 俯仰角（俯视角度，0-60度常用）
+        duration: 2000 // 动画时长（毫秒）
+    });
+});

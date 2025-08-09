@@ -8,6 +8,7 @@
     <title>Mapbox 地球模式</title>
     <link rel="shortcut icon" href="image/assets/icon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/sezhi.css">
     <link rel="stylesheet" href="mapbox-gl/dist/mapbox-gl.css" />
     <script type="text/javascript" src="mapbox-gl/dist/mapbox-gl.js"></script>
     <script type="text/javascript" src="jQuery/jquery-3.7.1.min.js"></script>
@@ -44,6 +45,14 @@
     <div class="latlng">
         <span id="latng"></span>
     </div>
+    <div class="search">
+        经度: <input type="text" id="lonInput" placeholder="经度" value="112.504100" autocomplete="off">
+        <br>
+       纬度: <input type="text" id="latInput" placeholder="纬度" value="25.74523582" autocomplete="off">
+        <br>
+        <button id="searchBtn">搜索</button>
+    </div>
+
     <div id="map"></div>
     <!-- 自定义弹窗 -->
     <div id="popup">
