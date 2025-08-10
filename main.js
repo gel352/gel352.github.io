@@ -123,7 +123,10 @@ searchBtn.addEventListener('click', function() {
 
     // 验证输入有效性
     if (isNaN(lon) || isNaN(lat) || lon < -180 || lon > 180 || lat < -90 || lat > 90) {
-        alert('请输入有效的经纬度（经度-180~180，纬度-90~90）');
+        $(".posapn").text("请输入有效的经纬度")
+        setTimeout(function () {
+            $("#popup").fadeIn(300)
+            }, 200)
         return;
     }
 
