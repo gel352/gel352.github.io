@@ -4,19 +4,20 @@
     background-color: #fff;
     position: fixed;
     top: 10px;
-    left: 20px;
+    left: -222px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 999;
+    display: none;
+    transition: all 0.5s;
 }
 .search #searchBtn{
     width: 80px;
     height: 30px;
     position: relative;
-    top: 0;
-    left: 60px;
+    top: -2px;
+    left: 110px;
     border-radius: 15px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
     margin: 20px 0;
     color: #fff;
     text-align: center;
