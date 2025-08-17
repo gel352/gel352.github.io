@@ -23,4 +23,73 @@
     font-size: 18px;
     background-color: #0084ff;
     border: none;
+    cursor: pointer;
+}
+.search #clearBtn{
+    width: 80px;
+    height: 30px;
+    position: relative;
+    top: -2px;
+    right: 65px;
+    border-radius: 15px;
+    margin: 20px 0;
+    font-size: 18px;
+    border: none;
+    color: #0084ff;
+    background-color: transparent;
+    cursor: pointer;
+}
+/* 输入框 */
+.searbox{
+    width: 180px;
+    height: 30px;
+    position: relative;
+    top: 25px;
+    left: 2px;
+    /* background-color: #757676; */
+}
+.searbox input{
+    width: 180px;
+    height: 30px;
+    position: relative;
+    top: 0;
+    border-radius: 3px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 1em;
+    /* background-color: #f2f2f2; */
+    border: 1px solid #757676;
+    caret-color: #0b57cf;
+}
+.searbox .span{
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    font-size: 1em;
+    color: #bbbbbb;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+.searbox input:valid ~ .span,
+.searbox input:focus ~ .span{
+    transform: translateX(6px) translateY(-13px);
+    /* font-size: 0.5em; */
+    font-size: 12px;
+    padding: 0 3px;
+    color: #0b57cf;
+    background-color: #fff;
+}
+
+.searbox input:valid,
+.searbox input:focus{
+    border: 1px solid #0b57cf;
+}
+
+.searbox input:not(:focus):invalid ~ .span,
+.searbox input:not(:focus):valid ~ .span{
+    color: #757676;
+}
+.searbox input:not(:focus):invalid,
+.searbox input:not(:focus):valid{
+    border: 1px solid #757676;
 }

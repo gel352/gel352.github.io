@@ -41,16 +41,28 @@
             <img src="image/assets/pegman.svg" id="pegimg">
         </div>
     </div>
+    <div id="logis">
+        <div class="logist">
+            <img src="image/logistic.svg">
+        </div>
+    </div>
     <!-- 经纬度显示 -->
     <div class="latlng">
         <span id="latng"></span>
     </div>
     <div class="search">
-        经度: <input type="text" id="lonInput" placeholder="经度" value="112.504100" autocomplete="off">
+        <div class="searbox">
+            <input type="text" id="lonInput" inputmode="numeric" autocomplete="off" required>
+            <span class="span">经度</span>
+        </div>
         <br>
-       纬度: <input type="text" id="latInput" placeholder="纬度" value="25.745235" autocomplete="off">
+        <div class="searbox">
+            <input type="text" id="latInput" inputmode="numeric" autocomplete="off" required>
+            <span class="span">纬度</span>
+        </div>
         <br>
         <button id="searchBtn">搜索</button>
+        <button id="clearBtn">关闭</button>
     </div>
 
     <div id="map"></div>
