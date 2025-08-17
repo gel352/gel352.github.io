@@ -44,7 +44,7 @@ map.on('load', () => {
     // 添加自定义影像瓦片
     map.addSource('custom-tiles', {
         type: 'raster',
-        tiles: ['https://gg.zhiyue-info.com/maps/vt?lyrs=s%40781&hl=zh-CN&x={x}&y={y}&z={z}&scale=2'],
+        tiles: ['https://cbk.8ditu.com/maps/vt?lyrs=s%40781&hl=zh-CN&x={x}&y={y}&z={z}&scale=2'],
         tileSize: 512,
         maxzoom: 22
     });
