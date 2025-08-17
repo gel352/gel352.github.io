@@ -1,3 +1,4 @@
+mapboxgl.config.TELEMETRY_DISABLED = true;
 // 设置 Mapbox 访问令牌
 mapboxgl.accessToken = 'pk.eyJ1Ijoid3l6d2FuZ3lhemhvdSIsImEiOiJjbGc0Z3RiN3Qwa3lhM3JzYWFmdGdsaWtvIn0.g8f6kkGmPIkD1mXGRO9Q2g';
 
